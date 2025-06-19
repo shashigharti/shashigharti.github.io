@@ -27,6 +27,7 @@ export default defineConfig({
   },
   plugins: [
     viteStaticCopy({
+      outputDir: '',
       targets: [
         {
           src: path.resolve(__dirname, 'node_modules/bootstrap-icons/font/fonts/*'),
