@@ -1,7 +1,15 @@
+import 'bootstrap';
 import '../scss/main.scss';
-import * as bootstrap from 'bootstrap';
 
 (async function () {
+    const feedUrl = 'https://medium.com/feed/@shashi.gharti';
+    const postsContainer = document.getElementById('container__posts');    
+
+    if (!postsContainer) {
+        return;
+    }
+    postsContainer.innerHTML = '';
+
     function removeHTMLTags(inputString){
         return inputString.replace(/<[^>]*>/g, '');
     }
@@ -29,11 +37,8 @@ import * as bootstrap from 'bootstrap';
         postElement.appendChild(excerpt);
 
         return postElement;
-    }
+    }  
 
-    const feedUrl = 'https://medium.com/feed/@shashi.gharti';
-    const postsContainer = document.getElementById('container__posts');
-    postsContainer.innerHTML = '';
     const errorElement = document.createElement('div');
     errorElement.innerHTML = "No posts found.";
 

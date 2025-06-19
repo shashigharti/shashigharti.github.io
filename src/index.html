@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="description" content="It is a personal website">    
-    <meta name="keywords" content="personal info, software projects, academic info">
-    <meta name="robots" content="noindex, nofollow">
-        
+    <meta name="description" content="It is a personal website" />
+    <meta name="keywords" content="personal info, software projects, academic info" />
+    <meta name="robots" content="noindex, nofollow" />
+
     <title>Personal Page</title>
 
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
   </head>
-  <body>  
+
+  <body>
     <div class="container header">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -29,118 +39,184 @@
                 <a class="nav-link" href="index.html#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="blogs.html" target="_blank">Blogs</a>
+                <a class="nav-link" href="blogs.html" target="_blank" rel="noopener">Blogs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://shorturl.at/HWpB0" target="_blank">CV</a>
+                <a class="nav-link" href="/assets/docs/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    </div>  
-    <div class = "container description">
+    </div>
+
+    <div class="container description">
       <div class="row">
-        <div class="container__left col-lg-3 col-md-3 col-sm-12">
+        <!-- Left Sidebar -->
+        <aside class="container__left col-lg-3 col-md-3 col-sm-12">
           <section class="containter__info organization">
-            <h2> Shashi Gharti </h2>
-            ML Engineer, @Omdena<br />
-            @AileenHealth @OKFN (Prev)<br />
-            Kathmandu, Nepal<br />
-            <nav  class="links" aria-label="Social Media Links">
-              <a href="mailto:shashi.gharti@gmail.com" aria-label="website" target="_blank">
+            <h2>Shashi Gharti</h2>
+            <p>
+              Full-Stack Developer/ML Engineer, @Omdena<br />
+              @AileenHealth @OKFN (Prev)<br />
+              Kathmandu, Nepal
+            </p>
+            <nav class="links" aria-label="Social Media Links">
+              <a href="mailto:shashi.gharti@gmail.com" aria-label="Send email to Shashi Gharti" title="Email Shashi Gharti">
                 <i class="bi bi-envelope"></i>
               </a>
-              <a href="https://github.com/shashigharti" aria-label="Github" target="_blank">
+              <a href="https://github.com/shashigharti" target="_blank" rel="noopener noreferrer" aria-label="Visit Shashi Gharti's GitHub profile" title="GitHub Profile">
                 <i class="bi bi-github"></i>
               </a>
+              <a href="https://www.linkedin.com/in/shashigharti" target="_blank" rel="noopener noreferrer" aria-label="Visit Shashi Gharti's LinkedIn profile" title="LinkedIn Profile">
+                <i class="bi bi-linkedin"></i>
+              </a>
             </nav>
-          </section>          
+          </section>
+
           <section class="containter__info education">
             <h3>Education</h3>
-            MSc, Computer Science <br />
-            Asian Institute of Technology <br />
-            Thailand
-          </section>
-          <section class = "containter__info skills">
-            <h3>Skills</h3>
-            <div class="skills__body">
-              Python, PHP, Javascript, React, Pytorch, OpenCV, QGIS, Geospatial data processing, GDAL, PostGIS, Mapbox, Leaflet, SNAP, 
-              Laravel, Django, Devops, Computer Vision, FastAPI, AirFlow, Object Detection and Segmentation
-            </div>      
-          </section>
-        </div>
-        <div class="container__right col-lg-9 col-md-9 col-sm-12">
-          <section class = "container__about">
-            <p class="container__about--info">
-              I am a fullstack developer with experience in machine learning. I enjoy the process of designing the architecture and 
-              implementating(coding) software applications. Besides software development, I have experience 
-              in machine learning focused in areas of object detection and segmentation which has sparked my interest in research 
-              in this field. I am eager to explore the application of machine learning in medical domain, climate change and 
-              remote sensing. Additionally, I also have keen interest in Explainable AI, Domain Generalization and architectural 
-              aspects related to machine learning.
-              
-              <br />
-              <br />
-              I enjoy learning through both reading and traveling. And I find peace and inspiration in Nature.
+            <p>
+              MSc, Computer Science<br />
+              Asian Institute of Technology<br />
+              Thailand
             </p>
           </section>
-          <section class = "container__publications">
+
+          <section class="containter__info skills">
+            <h3>Skills</h3>
+            <div class="skills__body">
+              Python, PHP, Javascript, React, Pytorch, OpenCV, QGIS, Geospatial data processing, GDAL, PostGIS, Mapbox,
+              Leaflet, SNAP, Laravel, Django, Devops, Computer Vision, FastAPI, AirFlow, Object Detection and Segmentation,
+              Langchain, RAG, MCP, Vector Database(Qdrant), Prefect, Airflow, AWS, GCP, Docker, CI/CD
+            </div>
+          </section>
+
+          <section class="containter__info volunteer">
+            <h3>Volunteer Work</h3>
+            <ul>
+              <li><strong><a href="https://omdena.com" target="_blank" rel="noopener noreferrer">Omdena</a>:</strong> Collaborative AI projects for social impact</li>
+      <li><strong><a href="https://aileenhealth.com" target="_blank" rel="noopener noreferrer">Aileen Health</a>:</strong> Volunteer contributor for healthcare AI tools</li>
+      <li><strong><a href="https://okfn.org" target="_blank" rel="noopener noreferrer">Open Knowledge Foundation</a>:</strong> Data and open source community volunteer</li>
+            </ul>
+          </section>
+
+          <section class="containter__info opensource-projects">
+            <h3>GitHub Open Source</h3>
+            <ul>
+              <li><a href="https://github.com/shashigharti/frictionless-py" target="_blank" rel="noopener noreferrer">frictionless-py</a></li>
+              <li><a href="https://github.com/okfn/opendataeditor" target="_blank" rel="noopener noreferrer">OpenData Editor</a></li>
+              <li><a href="https://github.com/ckan/ckan" target="_blank" rel="noopener noreferrer">CKAN</a></li>
+            </ul>
+          </section>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="container__right col-lg-9 col-md-9 col-sm-12">
+          <section class="container__about">
+            <p class="container__about--info">
+              I am a full-stack developer and I love building applications. I enjoy designing software architecture and implementing robust
+              applications. My machine learning work has primarily focused on object detection and segmentation and I am particularly eager to
+              explore the applications of machine learning in the medical domain, climate change, and remote sensing. Additionally, I have a
+              strong interest in Explainable AI, Domain Generalization, and the architectural aspects of machine learning systems.
+              <br /><br />
+              Beyond technology, I enjoy learning through both reading and traveling, and I find peace and inspiration in nature.
+            </p>
+          </section>
+
+          <section class="container__publications">
             <h2 class="text-center">Publications</h2>
-            <div class="row">
-              <ul class="publications list-group">
-                <li class="publications__item list-group-item">
-                  <i class="bi bi-arrow-right"> </i>Co-author, "Automatic Suspicious Behavior Detection from a Small Bootstrap Set,"
-                  Proceedings of the International Conference on Computer Vision Applications (VISAPP),
-                  2012.
-                </li>
-                <li class="publications__item list-group-item">
-                  <i class="bi bi-arrow-right"></i> Co-author, "Incremental Behavior Modeling and Suspicious Activity Detection,"
-                  published in the Journal of Pattern Recognition, 2013.
-                </li>
-              </ul>
-            </div>
+            <ul class="publications list-group">
+              <li class="publications__item list-group-item">
+                <i class="bi bi-arrow-right"></i> Co-author, "Automatic Suspicious Behavior Detection from a Small Bootstrap Set," Proceedings
+                of the International Conference on Computer Vision Applications (VISAPP), 2012.
+              </li>
+              <li class="publications__item list-group-item">
+                <i class="bi bi-arrow-right"></i> Co-author, "Incremental Behavior Modeling and Suspicious Activity Detection," published in the
+                Journal of Pattern Recognition, 2013.
+              </li>
+            </ul>
           </section>
-          <section class = "container__presentations">
+
+          <section class="container__presentations">
             <h2 class="text-center">Presentations</h2>
-            <div class="row">
-              <ul class="presentations list-group">
-                <li class="presentations__item list-group-item">
-                  <i class="bi bi-arrow-right"> </i>Program/Open Data/TPG87N-Data use and reuse: Unlocking the Potential of Frictionless Data for Wikidata, 2023
-                </li>
-              </ul>
-            </div>
+            <ul class="presentations list-group">
+              <li class="presentations__item list-group-item">
+                <i class="bi bi-arrow-right"></i> Program/Open Data/TPG87N-Data use and reuse: Unlocking the Potential of Frictionless Data for
+                Wikidata, 2023
+              </li>
+            </ul>
           </section>
-          <section class = "container__projects">
+
+          <section class="container__projects">
             <h2 id="projects" class="text-center">Projects</h2>
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-ml-tab" data-bs-toggle="tab" data-bs-target="#nav-ml" type="button" role="tab" aria-controls="nav-ml" aria-selected="true">Machine Learning & AI</button>
-                <button class="nav-link" id="nav-sd-tab" data-bs-toggle="tab" data-bs-target="#nav-sd" type="button" role="tab" aria-controls="nav-sd" aria-selected="false">Software Development</button>
+                <button
+                  class="nav-link active"
+                  id="nav-ml-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-ml"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-ml"
+                  aria-selected="true"
+                >
+                  Machine Learning & AI
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-sd-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-sd"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-sd"
+                  aria-selected="false"
+                >
+                  Software Development
+                </button>
               </div>
             </nav>
+
             <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-ml" role="tabpanel" aria-labelledby="nav-ml-tab">
-               <div class="container">
+              <div
+                class="tab-pane fade show active"
+                id="nav-ml"
+                role="tabpanel"
+                aria-labelledby="nav-ml-tab"
+              >
+                <div class="container">
                   <div class="row project">
-                    <img class="project__image col-lg-2 col-md-2 col-sm-12" src="assets/images/interferogram.png">
+                    <img
+                      class="project__image col-lg-2 col-md-2 col-sm-12"
+                      src="assets/images/interferogram.png"
+                      alt="Disaster Monitoring System"
+                    />
                     <section class="project__block col-lg-10 col-md-10 col-sm-12">
                       <div class="project__title">
                         Disaster Monitoring System (Contd.), Omdena, 2024
                         <div class="tags">
                           <span class="badge rounded-pill text-bg-info">Computer Vision</span>
                           <span class="badge rounded-pill text-bg-info">Satellite Image Processing</span>
-                          <span class="badge rounded-pill text-bg-info">Impact Assessment(Earthquake) </span>
+                          <span class="badge rounded-pill text-bg-info">Impact Assessment(Earthquake)</span>
                         </div>
-                      </div>                   
+                      </div>
                       <div class="project__body">
-                        <p>In this project, we are currently working on building pipeline for disaster monitoring and real-time 
-                          data analysis features for post-disaster impact mitigation. </p>                     
+                        <p>
+                          In this project, we are currently working on building pipeline for disaster monitoring and real-time data analysis
+                          features for post-disaster impact mitigation.
+                        </p>
                       </div>
                     </section>
                   </div>
+
                   <div class="row project">
-                    <img class="project__image col-lg-2 col-md-2 col-sm-12" src="assets/images/nma_RF.png">
+                    <img
+                      class="project__image col-lg-2 col-md-2 col-sm-12"
+                      src="assets/images/nma_RF.png"
+                      alt="Decoding Cortical Activations"
+                    />
                     <section class="project__block col-lg-10 col-md-10 col-sm-12">
                       <div class="project__title">
                         Decoding Cortical Activations, Neuromatch Match Academy(NMA), 2024
@@ -153,16 +229,22 @@
                           <span class="badge rounded-pill text-bg-info">Deep Learning</span>
                           <span class="badge rounded-pill text-bg-info">CNN</span>
                         </div>
-                      </div>                   
+                      </div>
                       <div class="project__body">
-                        <p>This was a group project as part of NMA(Neuromatch Academy) course, where we replicated the work of Kay and colleagues by
+                        <p>
+                          This was a group project as part of NMA(Neuromatch Academy) course, where we replicated the work of Kay and colleagues by
                           applying machine learning techniques to train a receptive field encoding model to predict brain activity.
                         </p>
                       </div>
                     </section>
                   </div>
+
                   <div class="row project">
-                    <img class="project__image col-md-2 col-sm-12" src="assets/images/armworms-damage-assessment.png">
+                    <img
+                      class="project__image col-md-2 col-sm-12"
+                      src="assets/images/armworms-damage-assessment.png"
+                      alt="Armyworm Impact Analysis"
+                    />
                     <section class="project__block col-md-10 col-sm-12">
                       <div class="project__title">
                         Armyworm Impact Analysis, Omdena, 2021
@@ -178,26 +260,38 @@
                         </div>
                       </div>
                       <div class="project__body">
-                        <p>We trained various object detection models including RCNN and U-NET to analyze satellite images for damage caused by army worms. </p>
-                        <nav  class="links" aria-label="Social Media Links">
-                          <a href="https://www.omdena.com/projects/armyworms-assessment" aria-label="website" target="_blank">
-                              <i class="bi bi-globe"></i>
+                        <p>
+                          We trained various object detection models including RCNN and U-NET to analyze satellite images for damage caused by army worms.
+                        </p>
+                        <nav class="links" aria-label="Social Media Links">
+                          <a href="https://www.omdena.com/projects/armyworms-assessment" aria-label="website" target="_blank" rel="noopener">
+                            <i class="bi bi-globe"></i>
                           </a>
-                      </nav>
+                        </nav>
                       </div>
                     </section>
                   </div>
+
                   <div class="seemore text-center">
-                    <a href="ml.html" class="text-info">
-                      See More...
-                    </a>
+                    <a href="ml.html" class="text-info">See More...</a>
                   </div>
-               </div>
+                </div>
               </div>
-              <div class="tab-pane fade" id="nav-sd" role="tabpanel" aria-labelledby="nav-sd-tab">
+
+              <!-- Software Development Tab -->
+              <div
+                class="tab-pane fade"
+                id="nav-sd"
+                role="tabpanel"
+                aria-labelledby="nav-sd-tab"
+              >
                 <div class="container">
                   <div class="row project">
-                    <img class="project__image col-lg-2 col-md-2 col-sm-12" src="assets/images/frictionless-py-thumbnail.png">
+                    <img
+                      class="project__image col-lg-2 col-md-2 col-sm-12"
+                      src="assets/images/frictionless-py-thumbnail.png"
+                      alt="Frictionless Py"
+                    />
                     <section class="project__block col-lg-10 col-md-10 col-sm-12">
                       <div class="project__title">
                         Frictionless Py, Open Knowledge Foundation(OKFN), 2023-2024
@@ -206,88 +300,161 @@
                           <span class="badge rounded-pill text-bg-info">FastAPI</span>
                           <span class="badge rounded-pill text-bg-info">Opendata</span>
                         </div>
-                      </div>                   
+                      </div>
                       <div class="project__body">
-                        <p>Frictionless-py is a data management framework for Python that provides functionality to describe, extract, 
-                          validate, and transform tabular data.
+                        <p>
+                          Frictionless-py is a data management framework for Python that provides functionality to describe, extract, validate, and
+                          transform tabular data.
                         </p>
                         <nav class="links" aria-label="Social Media Links">
-                          <a href="https://framework.frictionlessdata.io/" aria-label="website" target="_blank">
+                          <a href="https://framework.frictionlessdata.io/" aria-label="website" target="_blank" rel="noopener">
                             <i class="bi bi-globe2"></i>
                           </a>
-                          <a href="https://github.com/frictionlessdata/frictionless-py" aria-label="Github" target="_blank">
+                          <a href="https://github.com/frictionlessdata/frictionless-py" aria-label="Github" target="_blank" rel="noopener">
                             <i class="bi bi-github"></i>
                           </a>
                         </nav>
                       </div>
                     </section>
-                  </div> 
+                  </div>
+
                   <div class="row project">
-                    <img class="project__image col-lg-2 col-md-2 col-sm-12" src="assets/images/ode-thumbnail.png">
+                    <img
+                      class="project__image col-lg-2 col-md-2 col-sm-12"
+                      src="assets/images/ode-thumbnail.png"
+                      alt="OpenData Editor"
+                    />
                     <section class="project__block col-lg-10 col-md-10 col-sm-12">
                       <div class="project__title">
-                        OpenData Editor,  Open Knowledge Foundation(OKFN), 2024
+                        OpenData Editor, Open Knowledge Foundation(OKFN), 2024
                         <div class="tags">
                           <span class="badge rounded-pill text-bg-info">Python</span>
                           <span class="badge rounded-pill text-bg-info">React</span>
                           <span class="badge rounded-pill text-bg-info">FastAPI</span>
                           <span class="badge rounded-pill text-bg-info">Opendata</span>
                         </div>
-                      </div>                   
+                      </div>
                       <div class="project__body">
                         <p>Open Data Editor is an open source tool for non-technical data users to clean and process data before publishing.</p>
                         <nav class="links" aria-label="Social Media Links">
-                          <a href="https://opendataeditor.okfn.org/" aria-label="website" target="_blank">
+                          <a href="https://opendataeditor.okfn.org/" aria-label="website" target="_blank" rel="noopener">
                             <i class="bi bi-globe2"></i>
                           </a>
-                          <a href="https://github.com/okfn/opendataeditor" aria-label="Github" target="_blank">
+                          <a href="https://github.com/okfn/opendataeditor" aria-label="Github" target="_blank" rel="noopener">
                             <i class="bi bi-github"></i>
                           </a>
                         </nav>
                       </div>
                     </section>
                   </div>
+
                   <div class="row project">
-                    <img class="project__image col-lg-2 col-md-2 col-sm-12" src="assets/images/ckan.png">
+                    <img
+                      class="project__image col-lg-2 col-md-2 col-sm-12"
+                      src="assets/images/ckan.png"
+                      alt="Opendata Editor CKAN"
+                    />
                     <section class="project__block col-lg-10 col-md-10 col-sm-12">
                       <div class="project__title">
-                        Opendata Editor,  CKAN(OKFN), 2024
+                        Opendata Editor, CKAN(OKFN), 2024
                         <div class="tags">
                           <span class="badge rounded-pill text-bg-info">Python</span>
                           <span class="badge rounded-pill text-bg-info">Flask</span>
                           <span class="badge rounded-pill text-bg-info">Opendata</span>
                         </div>
-                      </div>                   
+                      </div>
                       <div class="project__body">
                         <p>Ckan is an open-source DMS(data management system) for powering data hubs and data portals.</p>
                         <nav class="links" aria-label="Social Media Links">
-                          <a href="https://ckan.org/" aria-label="website" target="_blank">
+                          <a href="https://ckan.org/" aria-label="website" target="_blank" rel="noopener">
                             <i class="bi bi-globe2"></i>
                           </a>
-                          <a href="https://github.com/ckan/ckan" aria-label="Github" target="_blank">
+                          <a href="https://github.com/ckan/ckan" aria-label="Github" target="_blank" rel="noopener">
                             <i class="bi bi-github"></i>
                           </a>
                         </nav>
                       </div>
                     </section>
                   </div>
+
                   <div class="seemore text-center">
-                    <a href="software.html" class="text-info">
-                      See More...
-                    </a>
+                    <a href="software.html" class="text-info">See More...</a>
                   </div>
                 </div>
               </div>
-            </div>      
-          </section>   
-        </div>
-      </div>     
-    </div>    
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
     <footer>
       <div class="container">
-        <!-- Footer content goes here -->
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <h5>Contact Me</h5>
+            <form action="https://formspree.io/f/mvgrbpaa" method="POST" novalidate>
+              <div class="mb-3">
+                <label for="contact-name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contact-name"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contact-email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="contact-email"
+                  name="_replyto"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="contact-message"
+                  name="message"
+                  rows="4"
+                  placeholder="Write your message here"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-info text-white">Send Message</button>
+            </form>
+          </div>
+
+          <!-- About & Social -->
+          <div class="col-lg-6 mb-4">
+            <h5>About</h5>
+            <p>I’m Shashi Gharti – a full-stack developer and ML engineer based in Kathmandu. Reach out via email or social media!</p>
+            <nav class="d-flex gap-3 mt-3" aria-label="Social Media">
+              <a href="mailto:shashi.gharti@gmail.com" aria-label="Email" target="_blank" rel="noopener">
+                <i class="bi bi-envelope fs-4"></i>
+              </a>
+              <a href="https://github.com/shashigharti" target="_blank" aria-label="GitHub" rel="noopener">
+                <i class="bi bi-github fs-4"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/shashigharti" target="_blank" aria-label="LinkedIn" rel="noopener">
+                <i class="bi bi-linkedin fs-4"></i>
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="text-center pt-3 mt-4 border-top">
+          <p class="mb-0">© 2025 Shashi Gharti. All rights reserved.</p>
+        </div>
       </div>
     </footer>
+
     <script type="module" src="./assets/js/index.js"></script>
   </body>
 </html>
