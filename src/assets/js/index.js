@@ -30,7 +30,7 @@ import '../scss/main.scss';
 
         const excerpt = document.createElement('p');
         const description = removeHTMLTags(post.description || '');
-        excerpt.textContent = description.slice(0, 200) + '...'; 
+        excerpt.textContent = description.slice(0, 400) + '...'; 
 
         title.appendChild(link);
         postElement.appendChild(title);

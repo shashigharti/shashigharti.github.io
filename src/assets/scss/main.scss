@@ -34,7 +34,7 @@ body {
 }
 
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .project__title {
@@ -132,5 +132,11 @@ nav.links {
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+.container__projects {
+  .project {
+    margin: 2rem 0 2rem 0;
   }
 }
