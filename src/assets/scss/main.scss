@@ -140,3 +140,10 @@ nav.links {
     margin: 2rem 0 2rem 0;
   }
 }
+
+@media (min-width: 992px) {
+  .project__image {
+    width: 150px;
+    height: 150px;
+  }
+}
