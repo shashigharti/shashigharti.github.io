@@ -1,1 +1,1 @@
-This is a profile website.
+This is a profile website showcasing the projects
